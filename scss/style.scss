@@ -1,0 +1,288 @@
+/****************
+General
+***************/
+@import 'imports';
+body {
+    font-family: $font1;
+}
+#wrapper {
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 0 5%;
+    page-break-after: always;
+    height: 100%;
+}
+a {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+}
+h3 {
+    margin: 0 0 1em 0;
+}
+/************************
+Heading
+************************/
+
+header {
+    float: left;
+    margin: 0 0 30px 0;
+    padding: 0;
+    width: 100%;
+    background: $main-color;
+    border-color: $main-color;
+    margin-bottom: 30px;
+    display: block;
+}
+#logo {
+    text-align: center;
+    margin: 0;
+}
+
+#menu ul li {
+    list-style-type: none;
+    display: inline;
+    padding: 20px;
+    vertical-align: bottom;
+}
+/************************
+Contact Page
+************************/
+
+.contact-info {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 0.9em;
+    a {
+        display: block;
+        min-height: 20px;
+        background-repeat: no-repeat;
+        background-size: 20px;
+        padding: 0 0 0 30px;
+        margin: 0 0 10;
+    }
+    li {
+        &.phone a {
+            background-image: url('../img/android-call.svg');
+        }
+        &.mail a {
+            background-image: url('../img/android-mail.svg');
+        }
+        &.twitter a {
+            background-image: url('../img/social-twitter.svg');
+        }
+    }
+}
+
+/************************
+Colors
+************************/
+
+/* Site Body */
+
+body {
+    background-color: $background;
+    color: #999;
+}
+h1 {
+    font-family: $title-font;
+    font-style: italic;
+    text-shadow: 4px 4px 4px $secondary-color;
+    margin: 15px 0;
+    font-size: 1.75em;
+    font-weight: normal;
+    line-height: 0.8em;
+}
+h2 {
+    font-size: 0.75em;
+    margin: -5px 0 0;
+    font-weight: normal;
+}
+/************************
+Navigation
+************************/
+
+select {
+    display: block;
+    margin: 0 auto;
+}
+
+/************************
+Footer
+************************/
+
+footer {
+    font-size: 0.75em;
+    text-align: center;
+    clear: both;
+    padding-top: 5px;
+    color: $background;
+    background: $main-color;
+    margin-top: 50px;
+    position:fixed;
+    left:0px;
+    bottom:0px;
+    height:30px;
+    width:100%;
+    border-top: 10px;
+    box-sizing: border-box;
+}
+.social-icon {
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+}
+/************************
+Porfolio Page
+************************/
+
+#gallery {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 50px;
+    list-style: none;
+    li {
+        float: left;
+        width: 45%;
+        margin: 2.5%;
+        background-color: $background;
+        color: #bdc3c7;
+        -webkit-transition: all 500ms ease-in-out 300ms;
+        -moz-transition: all 500ms ease-in-out 300ms;
+        -ms-transition: all 500ms ease-in-out 300ms;
+        -o-transition: all 500ms ease-in-out 300ms;
+        transition: all 500ms ease-in-out 300ms;
+        &:hover {
+            -webkit-box-shadow: 4px 4px 4px 4px #545454;
+            box-shadow: 4px 4px 4px 4px #545454;
+            -moz-transform: scale(1.1) rotate(20deg);
+            -webkit-transform: scale(1.1) rotate(20deg);
+            -o-transform: scale(1.1) rotate(20deg);
+            -ms-transform: scale(1.1) rotate(20deg);
+            transform: scale(1.1) rotate(20deg);
+
+        }
+        a p {
+            margin: 0;
+            padding: 5%;
+            font-size: 1em;
+            color: $complementary-color;
+            background: none;
+        }
+    }
+}
+.spoiler p {
+    min-height: 40px;
+    color: $main-color;
+}
+/*Lightbox*/
+
+#overlay {
+    background: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    text-align: center;
+    background-repeat: repeat;
+    p {
+        color: $background;
+    }
+    img {
+        max-width: 75%;
+        max-height: 75%;
+        padding-top: 10%;
+    }
+}
+/************************
+About Page
+************************/
+
+.profile-photo {
+    display: block;
+    max-width: 150px;
+    margin: 0 auto 30px;
+    border-radius: 100%;
+}
+/* Nav Background on Mobile */
+
+nav {
+    background: $main-color;
+}
+/* Logo Text */
+
+h1,
+h2 {
+    color: $background;
+}
+h3 {
+    color: $complementary-color;
+    text-shadow: 0.5px 0.5px 0.5px $secondary-color;
+}
+a {
+    color: $main-color;
+}
+/* Nav Link */
+
+nav a {
+    color: $background;
+    &:visited {
+        color: $background;
+    }
+    &.selected,
+    &:hover {
+        color: $secondary-color;
+    }
+}
+.button {
+    display: block;
+    margin: 0 auto;
+    -moz-box-shadow: inset 8px 20px 19px -16px #ffffff;
+    -webkit-box-shadow: inset 8px 20px 19px -16px #ffffff;
+    box-shadow: inset 8px 20px 19px -16px #ffffff;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf));
+    background: -moz-linear-gradient(center top, #ededed 5%, #dfdfdf 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
+    background-color: #ededed;
+    -webkit-border-top-left-radius: 21px;
+    -moz-border-radius-topleft: 21px;
+    border-top-left-radius: 21px;
+    -webkit-border-top-right-radius: 21px;
+    -moz-border-radius-topright: 21px;
+    border-top-right-radius: 21px;
+    -webkit-border-bottom-right-radius: 21px;
+    -moz-border-radius-bottomright: 21px;
+    border-bottom-right-radius: 21px;
+    -webkit-border-bottom-left-radius: 21px;
+    -moz-border-radius-bottomleft: 21px;
+    border-bottom-left-radius: 21px;
+    text-indent: 0;
+    border: 1px solid #dcdcdc;
+    display: inline-block;
+    color: #777777;
+    font-family: Arial Black;
+    font-size: 15px;
+    font-weight: bold;
+    font-style: normal;
+    height: 36px;
+    line-height: 36px;
+    width: 144px;
+    text-decoration: none;
+    text-align: center;
+    text-shadow: 0px 0px 0px #ffffff;
+    &:active {
+        position: relative;
+        top: 1px;
+    }
+    &:hover {
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #ededed));
+        background: -moz-linear-gradient(center top, #dfdfdf 5%, #ededed 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#ededed');
+        background-color: #dfdfdf;
+    }
+}
+
