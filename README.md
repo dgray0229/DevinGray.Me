@@ -5,7 +5,7 @@
 ## Details
 
 Link to site:
-[Devin Gray](http://devingray.devingrayllc.com)
+[Heroku](https://devingray-first-portfolio.herokuapp.com/)|[Devin Gray](http://devingray.devingrayllc.com)
   * Home page with CSS Slideshow
   * About page with profile picture
   * Portfolio page with image gallery and Lightbox effects
