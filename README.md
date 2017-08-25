@@ -5,7 +5,7 @@
 ## Details
 
 Link to site:
-[GH Pages](http://dgray0229.github.io/devingray.me/)|[Devin Gray](http://devingray.devingrayllc.com)
+[Devin Gray](http://devingray.devingrayllc.com)
   * Home page with CSS Slideshow
   * About page with profile picture
   * Portfolio page with image gallery and Lightbox effects
